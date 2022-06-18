@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
-    <title>H.A.H.A.A</title>
+    <title>H.A.H.A.A.</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
+        <a href="../index.html">
             <h1 id="logo">hitchin and hatfield astronomy association</h1>
         </a>
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="../index.html" class="active">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li>
                     <a href="../planets.html" class="active">Planets</a>
@@ -30,6 +30,8 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Planet navigation menu -->
     <section class="planet-menu">
         <nav class="planet-menu-nav">
             <ul>
@@ -43,7 +45,7 @@
                     <a href="/planets/earth.html">Earth</a>
                 </li>
                 <li>
-                    <a href="/planets/mars.html">Mars</a>
+                    <a href="/planets/mars.html" class="active-planet">Mars</a>
                 </li>
                 <li>
                     <a href="/planets/jupiter.html">Jupiter</a>
@@ -60,9 +62,32 @@
             </ul>
         </nav>
     </section>
-    <section>
+    <section id="planet-section">
+        <div id="planet-title">
+            <h2>Mars</h2>
+        </div>
         <div>
-            <h2>Mid-Section Title</h2>
+            <picture>
+                <source media="(max-width: 800px)" srcset="#">
+                <source media="(max-width: 900px)" srcset="#">
+                <img src="#" alt="Pictures of the Planet Mars">
+            </picture>
+        </div>
+        <div>
+            <label for="planet-table">Mars</label>
+            <table id="planet-table">
+                <tr>
+                    <th>Size</th>
+                    <th>Mass</th>
+                    <th>Orbital Distance</th>
+                </tr>
+
+                <tr>
+                    <td>SIZE</td>
+                    <td>MASS</td>
+                    <td>DIST.</td>
+                </tr>
+            </table>
         </div>
 
     </section>

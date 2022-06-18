@@ -1,7 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&family=Nunito:wght@200&display=swap');
 
-
-h1, h2 {
-    font-family: 'Nunito', sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
+body {
+    font-family: 'Anek Malayalam', sans-serif;
+    background-color: #161616;
+    color: #afafaf;
+}
+
+h1{
+    /* font-size:350%; */
+    letter-spacing: 4px;
+}
+
+h1,
+h2 {
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize
+}
+
+/* below css rule for text-transfrom, overrides the one set above  */
+#logo {
+    text-transform: uppercase;
+    float: left;
+    font-size: 280%;
+    margin-left: 20px;
+}
+
+#menu {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+    font-size: 25px;
+    word-spacing: 2px;
+}
+
+a {
+    color: #afafaf;
+    text-decoration: none;
+
+}
