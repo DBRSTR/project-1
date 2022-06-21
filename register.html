@@ -19,45 +19,79 @@
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li>
-                    <a href="planets.html">Planets</a>
+                    <a href="planets.html"><i class="fa-solid fa-rocket"></i> Planets</a>
                 </li>
                 <li>
-                    <a href="register.html" class="active">Register</a>
+                    <a href="register.html" class="active"><i class="fa-solid fa-clipboard-user"></i> Register</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section id="mid">
+    <section class="mid-section">
+        <h2>Explore the Night Sky</h2>
+        <picture>
+            <source media="(max-width: 800px)"
+                srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/jellyfish.png">
+            <source media="(max-width: 900px)" srcset="/assets/images/pexels-jacub-gomez-1142950.jpg">
+            <img class="astro-main-image" src="/assets/images/pexels-jacub-gomez-1142950.jpg"
+                alt="=Assortment of pictures, of stars in the night sky">
+        </picture>
         <div>
-            <h2>Mid-Section Title</h2>
-        </div>
-        <div>
-            <p>place holder text, place holder text, place holder text, place holder text, place holder text, place
-                holder
-                text, </p>
-        </div>
-        <div>
-            <form>
-                <fieldset>
-                <legend>Your Details </legend>
-                <label>Name </label>
-                <input type="text"/>
+            <form method="POST" action="#" class="registration">
+                <h3>Join us!</h3>
+                <label for="first-name">First Name</label>
+                <input class="text-input" id="first-name" name="first_name" type="text" required>
+                
+                <label for="last-name">Last Name</label>
+                <input class="text-input" id="last-name" name="last_name" type="text" required>
+                
+                <label for="email">Email Address</label>
+                <input class="text-input" type="email" id="email" name="email_address" required>
                 <br>
-                <label>Email</label>
-                <input type="text"/>
-                </fieldset>
-               </form>
+                <h3>What locations are you interested?</h3>
+                <label for="road">Hitchin</label>
+                <input type="radio" id="hitchin" name="area" value="road" required>
+                <label for="trail">Hatfield</label>
+                <input type="radio" id="hatfield" name="area" value="trail" required>
+                <label for="both">Both</label>
+                <input type="radio" id="both" name="area" value="both" required>
+                <br>
+                <input type="submit" value="Sign me up!">
+            </form>
         </div>
 
     </section>
-    <section>
-        <div>
-            Footer information
-        </div>
-    </section>
+
+    <footer>
+        <p>Follow us on Social Media! <i class="fa-solid fa-satellite-dish"></i></p>
+        <ul>
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our FaceBook Page (Opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter Page (Opens in a new tab)"><i
+                        class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit our youtube channel (Opens in a new tab)"><i
+                        class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram Page (Opens in a new tab)"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/b3c59f9555.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
