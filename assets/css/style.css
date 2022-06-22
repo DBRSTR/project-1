@@ -6,6 +6,15 @@
     border: none;
 }
 
+/* html,
+body {
+    height: 100%;
+} */
+
+.mid-section{
+    min-height: 100%;
+}
+
 body {
     font-family: 'Anek Malayalam', sans-serif;
     background-color: #161616;
@@ -94,7 +103,6 @@ header>a>h1 {
 
 .mid-section {
     margin: 15px;
-    /* height: 300px; */
 }
 
 .mid-section>h2 {
