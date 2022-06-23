@@ -6,20 +6,7 @@
     border: none;
 }
 
-/* 
-Below two stylings for html, body{height} and .mid-section{min-height} were added, to fix styling bug with
-overall height of page. The footer on larger screens floated above it's desired place.
-*/
-
-/* html {
-    height: 100vh;
-} */
-
-/* body {
-    height: 100%;
-    max-width: 100%;
-} */
-
+.planet-info,
 .mid-section {
     margin: 0 20px;
     height: 80.5vh;
@@ -28,8 +15,8 @@ overall height of page. The footer on larger screens floated above it's desired 
 
 body {
     font-family: 'Anek Malayalam', sans-serif;
-    background-color: #161616;
-    color: #afafaf;
+    background-color: black;
+    color: #fff;
 }
 
 
@@ -42,7 +29,6 @@ h2 {
 }
 
 header {
-    background-color: #161616;
     margin: 0 20px 0 20px;
 }
 
@@ -61,7 +47,7 @@ header {
     text-align: center;
     height: 43px;
     word-spacing: 100px;
-    background-color: #afafaf;
+    background-color: #fff;
     color: #161616;
     border: 1px solid #161616;
 }
@@ -86,20 +72,28 @@ i {
 }
 
 header>a>h1 {
-    color: #afafaf;
+    color: #fff;
     text-decoration: none;
 }
 
 
-/* mid-section styling for main section of page */
+/* styling for main content on page */
 
-.mid-section>h2 {
-    padding: 20px 0;
+.planet-info {
+    background-color: black;
 }
 
-.mid-section h3 {
+.mid-section>h2,
+.planet-info>h2 {
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.mid-section h3,
+.planet-info h3 {
     margin: 0 0 10px 0;
     font-weight: 800;
+    font-size: 25px;
 }
 
 .mid-section>div {
@@ -109,22 +103,103 @@ header>a>h1 {
     margin: 0px 20px 0 auto;
 }
 
-.mid-section>div>p {
-    font-weight: 600;
-    margin-bottom: 10px;
+.planet-info>div {
+    clear: both;
+    display: inline-block;
 }
 
-#astro-main > img {
+#planet-info-p {
+    display: block;
+}
+
+.mid-section p,
+.planet-info p {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.planet-link h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* below styling is for planet layout */
+
+.planet-link {
+    margin: 5% 2%;
+    text-align: center;
+}
+
+/* main image stylings */
+
+#astro-main>img {
     margin: 0 20px 0 0;
     border-radius: 1.5%;
     clear: both;
 }
 
+/* planet images stylings */
+
+.mercury {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.venus {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.earth {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.mars {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.jupiter {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.saturn {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.uranus {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.neptune {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
 footer {
-    position: absolute;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    overflow: auto;
     text-align: center;
     width: 100%;
-    background-color: #afafaf;
+    background-color: #fff;
     color: #161616;
     font-weight: 600;
     height: 55px;
