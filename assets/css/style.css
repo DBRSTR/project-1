@@ -6,13 +6,24 @@
     border: none;
 }
 
-/* html,
-body {
-    height: 100%;
+/* 
+Below two stylings for html, body{height} and .mid-section{min-height} were added, to fix styling bug with
+overall height of page. The footer on larger screens floated above it's desired place.
+*/
+
+/* html {
+    height: 100vh;
 } */
 
-.mid-section{
-    min-height: 100%;
+/* body {
+    height: 100%;
+    max-width: 100%;
+} */
+
+.mid-section {
+    margin: 0 20px;
+    height: 80.5vh;
+    width: auto;
 }
 
 body {
@@ -32,6 +43,7 @@ h2 {
 
 header {
     background-color: #161616;
+    margin: 0 20px 0 20px;
 }
 
 /* below css rule for text-transfrom, overrides the one set above  */
@@ -40,25 +52,18 @@ header {
     text-transform: uppercase;
     float: left;
     font-size: 280%;
-    margin-left: 20px;
-    margin-right: 20px;
     font-weight: 600;
-
 }
 
-#menu,
-.planet-menu {
+#menu {
     clear: both;
     width: 100%;
     text-align: center;
-    height: 20%;
+    height: 43px;
     word-spacing: 100px;
     background-color: #afafaf;
     color: #161616;
     border: 1px solid #161616;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    /* margin: 0 20px 0 20px; */
 }
 
 #menu li {
@@ -67,8 +72,7 @@ header {
     font-size: 30px;
 }
 
-#menu a,
-.planet-menu a {
+#menu a {
     text-decoration: none;
     color: #161616;
     font-weight: 700;
@@ -87,26 +91,10 @@ header>a>h1 {
 }
 
 
-
-.planet-menu>nav {
-    height: 10%;
-    width: 100%;
-    word-spacing: 50px;
-}
-
-.planet-menu li {
-    font-size: 30px;
-    display: inline-block;
-}
-
 /* mid-section styling for main section of page */
 
-.mid-section {
-    margin: 15px;
-}
-
 .mid-section>h2 {
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 .mid-section h3 {
@@ -137,15 +125,12 @@ header>a>h1 {
 
 footer {
     position: absolute;
-    bottom: 0 auto;
     text-align: center;
     width: 100%;
     background-color: #afafaf;
     color: #161616;
     font-weight: 600;
     height: 55px;
-    text-align: center;
-    clear: both;
 }
 
 footer>span {
