@@ -114,14 +114,11 @@ header>a>h1 {
     margin-bottom: 10px;
 }
 
-.astro-main-image {
-    width: 650px;
-    height: 500px;
+#astro-main > img {
     margin: 0 20px 0 0;
     border-radius: 1.5%;
     clear: both;
 }
-
 
 footer {
     position: absolute;
@@ -154,6 +151,12 @@ input[type=submit] {
     margin-top: 17px;
 }
 
-/* @media screen and (max-width: 950;) {
-
+/* @media screen and (max-width: 1000px) {
+    picture > source {
+        width: 350px;
+        height: 250px;
+        margin: 0 20px 0 0;
+        border-radius: 1.5%;
+        clear: both;
+    }
 } */
