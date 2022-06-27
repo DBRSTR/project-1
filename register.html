@@ -31,33 +31,45 @@
         </nav>
     </header>
     <section class="mid-section">
-        <h2>Explore the Night Sky</h2>
-        <picture id="astro-main">
-            <source media="(max-width:950px)" srcset="assets/images/pexels-shay-wood-574115.jpg">
-            <img src="assets/images/pexels-miriam-espacio-365633.jpg"
-                alt="=Assortment of pictures of stars in the night sky">
-        </picture>
-        <div>
+        <h2>Interested?</h2>
+        <img id="galileo" src="assets/images/galileo.PNG" alt="=Assortment of pictures of stars in the night sky">
+        <div id="form-container">
             <form method="POST" action="#" class="registration">
-                <h3>Join us!</h3>
-                <label for="first-name">First Name</label>
-                <input class="text-input" id="first-name" name="first_name" type="text" required>
-                
-                <label for="last-name">Last Name</label>
-                <input class="text-input" id="last-name" name="last_name" type="text" required>
-                
-                <label for="email">Email Address</label>
-                <input class="text-input" type="email" id="email" name="email_address" required>
+                <h3>Sign-up!</h3>
+                <div id="form-text">
+                    <label style="font-weight:700" for="first-name">First Name</label>
+                    <input class="text-input" id="first-name" name="first_name" type="text" required>
+
+                    <br>
+
+                    <label style="font-weight:700" for="last-name">Last Name</label>
+                    <input class="text-input" id="last-name" name="last_name" type="text" required>
+
+                    <br>
+
+                    <label style="font-weight:700" for="email">Email Address</label>
+                    <input class="text-input" type="email" id="email" name="email_address" required>
+
+                </div>
+
+                <h4>What locations are you interested?</h4>
+                <div id="form-radio">
+                    <div>
+                        <label for="road">Hitchin</label>
+                        <input type="radio" id="hitchin" name="area" value="road" required>
+                    </div>
+                    <div>
+                        <label for="trail">Hatfield</label>
+                        <input type="radio" id="hatfield" name="area" value="trail" required>
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input type="radio" id="both" name="area" value="both" required>
+                    </div>
+                </div>
+                <input type="submit" value="Register">
                 <br>
-                <h3>What locations are you interested?</h3>
-                <label for="road">Hitchin</label>
-                <input type="radio" id="hitchin" name="area" value="road" required>
-                <label for="trail">Hatfield</label>
-                <input type="radio" id="hatfield" name="area" value="trail" required>
-                <label for="both">Both</label>
-                <input type="radio" id="both" name="area" value="both" required>
-                <br>
-                <input type="submit" value="Sign me up!">
+
             </form>
         </div>
 

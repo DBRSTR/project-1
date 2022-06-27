@@ -17,10 +17,11 @@ body {
     font-family: 'Anek Malayalam', sans-serif;
     background-color: black;
     color: #fff;
+    margin-bottom: 55px;
 }
 
 
-/* set font for h1 and h2 elements along with correct spacing. Text-transform added in to save on b */
+/* set font for h1 and h2 elements along with correct spacing */
 h1,
 h2 {
     font-family: 'Nunito', sans-serif;
@@ -49,7 +50,6 @@ header {
     word-spacing: 100px;
     background-color: #fff;
     color: #161616;
-    border: 1px solid #161616;
 }
 
 #menu li {
@@ -104,7 +104,6 @@ header>a>h1 {
 }
 
 .planet-info>div {
-    clear: both;
     display: inline-block;
 }
 
@@ -129,9 +128,15 @@ header>a>h1 {
 
 /* below styling is for planet layout */
 
-.planet-link {
-    margin: 5% 2%;
+.planet-container {
+    width: 100%;
     text-align: center;
+    margin: 10px 0 55px 0;
+}
+
+.planet-link {
+    display: inline-block;
+    margin: 0 1.5rem;
 }
 
 /* main image stylings */
@@ -139,7 +144,7 @@ header>a>h1 {
 #astro-main>img {
     margin: 0 20px 0 0;
     border-radius: 1.5%;
-    clear: both;
+
 }
 
 /* planet images stylings */
@@ -219,11 +224,88 @@ a {
     color: #161616;
 }
 
-input[type=submit] {
-    background-color: #afafaf;
+#form-container {
+    border: 3px white solid;
+    color: white;
+    border-radius: 5%;
+    width: 400px;
     padding: 10px;
+    padding-top: 10px;
+}
+
+form > h4{
+    margin-left: 10px;
+}
+
+#form-text {
+    margin: 10px;
+    width: 100px;
+}
+
+#form-text>input{
+    padding-bottom: 5px;
+}
+
+#form-radio {
+    margin: 10px;
+    font-weight: 700;
+    width: 100%;
+    word-spacing: 20px;
+}
+
+
+#form-radio > div {
+    display: inline-block;
+    word-spacing: 5px;
+
+}
+
+
+
+input[type=text], input[type=email] {
+    background-color: lightgray;
+    color: black;
+    font-size: medium;
+    padding: 3px;
+}
+
+input[type=submit] {
+    margin: 10px 0 10px 10px;
+    background-color: white;
+    color: black;
+    font-size: medium;
+    width: 80px;
+    height: 40px;
+    border-radius: 7%;
     font-weight: 600;
-    margin-top: 17px;
+}
+
+input[type='radio']:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: lawngreen;
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
+}
+
+#galileo {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    float: right;
+    display: block;
 }
 
 /* @media screen and (max-width: 1000px) {
@@ -232,6 +314,6 @@ input[type=submit] {
         height: 250px;
         margin: 0 20px 0 0;
         border-radius: 1.5%;
-        clear: both;
+       
     }
 } */
