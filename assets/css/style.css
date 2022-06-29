@@ -9,7 +9,6 @@
 .planet-info,
 .mid-section {
     margin: 0 20px;
-    height: 80.5vh;
     width: auto;
 }
 
@@ -29,8 +28,8 @@ h2 {
     letter-spacing: 4px;
 }
 
-header {
-    margin: 0 20px 0 20px;
+header h1 {
+    margin: 0 20px;
 }
 
 /* below css rule for text-transfrom, overrides the one set above  */
@@ -76,6 +75,9 @@ header>a>h1 {
     text-decoration: none;
 }
 
+.active {
+    border: 4px white dotted;
+}
 
 /* styling for main content on page */
 
@@ -98,7 +100,6 @@ header>a>h1 {
 
 .mid-section>div {
     position: absolute;
-    width: auto;
     display: inline-block;
     margin: 0px 20px 0 auto;
 }
@@ -198,10 +199,8 @@ header>a>h1 {
 }
 
 footer {
-    clear: both;
     position: fixed;
     bottom: 0;
-    overflow: auto;
     text-align: center;
     width: 100%;
     background-color: #fff;
@@ -210,14 +209,17 @@ footer {
     height: 55px;
 }
 
-footer>span {
-    padding-top: 5px;
+footer>h4 {
+    padding: 5px 0;
+}
+
+footer>ul {
+    word-spacing: 30px;
 }
 
 footer li {
     display: inline-block;
-    padding-bottom: 5px;
-    width: 55px;
+    padding-bottom: 10px;
 }
 
 a {
@@ -225,6 +227,7 @@ a {
 }
 
 #form-container {
+    display: block;
     border: 3px white solid;
     color: white;
     border-radius: 5%;
@@ -233,7 +236,7 @@ a {
     padding-top: 10px;
 }
 
-form > h4{
+form>h4 {
     margin-left: 10px;
 }
 
@@ -242,7 +245,7 @@ form > h4{
     width: 100px;
 }
 
-#form-text>input{
+#form-text>input {
     padding-bottom: 5px;
 }
 
@@ -254,7 +257,7 @@ form > h4{
 }
 
 
-#form-radio > div {
+#form-radio>div {
     display: inline-block;
     word-spacing: 5px;
 
@@ -262,7 +265,8 @@ form > h4{
 
 
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
     background-color: lightgray;
     color: black;
     font-size: medium;
@@ -301,19 +305,73 @@ input[type='radio']:checked:after {
 }
 
 #galileo {
-    width: 450px;
-    height: 450px;
+    width: 420px;
+    height: 420px;
     border-radius: 50%;
     float: right;
     display: block;
+    clear: both;
+    margin-bottom: 58px;
 }
 
-/* @media screen and (max-width: 1000px) {
-    picture > source {
-        width: 350px;
-        height: 250px;
-        margin: 0 20px 0 0;
-        border-radius: 1.5%;
-       
+/* Responsive design stylings below */
+
+@media screen and (max-width: 950px) {
+
+    .active {
+        border: none;
     }
-} */
+
+    #logo {
+        font-size: 30px;
+    }
+
+    #menu li {
+        font-size: 20px;
+    }
+
+    #logo {
+        margin: 0 5px;
+    }
+
+    #menu {
+        height: fit-content;
+    }
+
+    #astro-main>img {
+        width: 275px;
+        height: 225px;
+        margin: 0;
+    }
+
+    .mid-section {
+        width: 90%;
+    }
+
+    .mid-section>div {
+        display: block;
+        width: 95%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    #form-container {
+        display: block;
+        width: 270px;
+        height: 46vh;
+        padding: 2px;
+    }
+
+    #galileo {
+        width: 350px;
+        height: 350px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    #galileo {
+        visibility: hidden;
+    }
+}
