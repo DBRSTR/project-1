@@ -370,6 +370,8 @@ input[type='radio']:checked:after {
 
 }
 
+/* Work around for Galileo image obscuring the form information, below a certain screen width */
+
 @media screen and (max-width: 767px) {
     #galileo {
         visibility: hidden;
